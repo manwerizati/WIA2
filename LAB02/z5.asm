@@ -1,0 +1,14 @@
+org 100h
+
+mov AH, 02h
+mov BH, 0
+mov DH, 12
+mov DL, 40
+int 10h
+
+mov AH, 02h
+mov DL, 'C'
+int 21h
+
+mov AH, 00h
+int 21h
